@@ -3,6 +3,9 @@ install:
 	npm ci
 	@echo "Dependencies installed successfully."
 
+lint:
+	npx eslint .
+
 brain-games:
 	node bin/brain-games.js
 
