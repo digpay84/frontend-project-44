@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/digpay84/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/digpay84/frontend-project-44/actions)",
-  "main": "index.js",
+  "main": "bin/brain-games.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,5 +23,9 @@
   "devDependencies": {
     "@stylistic/eslint-plugin": "^5.6.1",
     "eslint": "^9.39.2"
+  },
+  "bin": {
+    "brain-games": "bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   }
 }
