@@ -1,6 +1,10 @@
 import readlineSync from 'readline-sync'
+import { hi } from '../src/cli.js'
 
-export function even(name) {
+const name = hi()
+even(name)
+
+function even(name) {
   let correctAnswersCount = 0
 
   console.log('Answer "yes" if the number is even, otherwise answer "no".')
