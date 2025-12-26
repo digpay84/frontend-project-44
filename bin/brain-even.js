@@ -1,5 +1,8 @@
+#!/usr/bin/env node
+
 import readlineSync from 'readline-sync'
 import { hi } from '../src/cli.js'
+import { getRandomValueInRange } from '../src/lib.js'
 
 const name = hi()
 even(name)
@@ -30,9 +33,7 @@ function even(name) {
   }
 }
 
-function getRandomValueInRange(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
+
 
 function isEven(value) {
   return !(value % 2)
