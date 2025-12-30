@@ -15,7 +15,15 @@ const value1 = getRandomValueInRange(0, 100)
   const question = `${value1} ${operator} ${value2}`
   return {
     question,
-    rightAnswer: eval(question).toString()
+    rightAnswer: calcExpression(operator, value1, value2) .toString()
   }
 }
 
+function calcExpression(operator, value1, value2) {
+  switch (operator) {
+    case '+': return value1 + value2
+    case '-': return value1 - value2
+    case '*': return value1 * value2
+    default: throw Error('Неправильный оператор')
+  }
+}
