@@ -9,3 +9,12 @@ export function getRandomIndex(max) {
 export function isEven(value) {
   return !(value % 2)
 }
+
+export function getGCD(a, b) {    
+  while (b) {
+    let temp = b;
+    b = a % b;
+    a = temp;
+  }
+  return a;
+}

@@ -9,10 +9,11 @@ export function calc() {
 }
 
 function createQuestion() {
-const value1 = getRandomValueInRange(0, 100)
+  const value1 = getRandomValueInRange(0, 100)
   const value2 = getRandomValueInRange(0, 100)
   const operator = operators[getRandomIndex(operators.length)]
   const question = `${value1} ${operator} ${value2}`
+  
   return {
     question,
     rightAnswer: calcExpression(operator, value1, value2) .toString()
