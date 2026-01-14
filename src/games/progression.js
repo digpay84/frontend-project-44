@@ -1,5 +1,5 @@
-import { createGame } from "../index.js";
-import { createProgression, getRandomIndex } from "../lib.js";
+import { createGame } from '../index.js'
+import { createProgression, getRandomIndex } from '../lib.js'
 
 const description = 'What number is missing in the progression?'
 
