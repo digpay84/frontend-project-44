@@ -8,6 +8,6 @@
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "prettier.enable": false,
   "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   }
 }
