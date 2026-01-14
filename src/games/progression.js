@@ -14,7 +14,7 @@ function createQuestion() {
   progression[index] = '..'
 
   return {
-    question: progression,
+    question: progression.join(' '),
     rightAnswer
   }
 }
