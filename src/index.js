@@ -11,7 +11,7 @@ export function createGame(description, createQuestion ) {
         console.log(`Question: ${question}`)
         const answer = readlineSync.question('Your answer: ')
 
-        if (answer !== rightAnswer) {
+        if (answer !== rightAnswer.toString()) {
             console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`)
             console.log(`Let's try again, ${name}!`)
             return
