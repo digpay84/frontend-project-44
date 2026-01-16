@@ -10,8 +10,9 @@ export default [
       '@stylistic/eol-last': ['error', 'always'],
       '@stylistic/semi': ['error', 'never'],
       '@stylistic/indent': ['error', 2],
-      '@stylistic/no-trailing-spaces': ['error', { 'skipBlankLines': false, 'ignoreComments': false }],
+      '@stylistic/no-trailing-spaces': ['error', { skipBlankLines: false, ignoreComments: false }],
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
+      '@stylistic/quote-props': ['error', 'consistent-as-needed'],
     },
   },
 ]
