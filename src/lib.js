@@ -32,11 +32,11 @@ export function isPrime(n) {
 
 export function createProgression() {
   const result = []
-  const length = getRandomValueInRange(5,15)
+  const length = getRandomValueInRange(5, 15)
   const start = getRandomValueInRange(0, 9)
   const step = getRandomValueInRange(1, 10)
-  for (let i=0;i<length;i++) {
-    result.push(start+i*step)
+  for (let i = 0; i < length; i++) {
+    result.push(start + i * step)
   }
 
   return result

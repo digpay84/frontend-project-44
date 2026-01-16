@@ -16,7 +16,7 @@ function createQuestion() {
 
   return {
     question,
-    rightAnswer: calcExpression(operator, value1, value2) .toString(),
+    rightAnswer: calcExpression(operator, value1, value2).toString(),
   }
 }
 

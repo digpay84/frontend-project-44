@@ -3,7 +3,7 @@ import { hi } from './cli.js'
 
 const maxRoundCount = 3
 
-export function createGame(description, createQuestion ) {
+export function createGame(description, createQuestion) {
   const name = hi()
   console.log(description)
   for (let i = 0; i < maxRoundCount; i++) {
