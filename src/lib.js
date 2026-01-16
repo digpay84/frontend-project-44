@@ -1,16 +1,16 @@
-export function getRandomValueInRange(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min
+export function getRandomValueInRange(min, max,) {
+  return Math.floor(Math.random() * (max - min + 1),) + min
 }
 
-export function getRandomIndex(max) {
-  return Math.floor(Math.random() * (max))
+export function getRandomIndex(max,) {
+  return Math.floor(Math.random() * (max),)
 }
 
-export function isEven(value) {
+export function isEven(value,) {
   return !(value % 2)
 }
 
-export function getGCD(a, b) {
+export function getGCD(a, b,) {
   while (b) {
     let temp = b
     b = a % b
@@ -19,7 +19,7 @@ export function getGCD(a, b) {
   return a
 }
 
-export function isPrime(n) {
+export function isPrime(n,) {
   if (n <= 1) return false
   if (n <= 3) return true
 
@@ -32,11 +32,11 @@ export function isPrime(n) {
 
 export function createProgression() {
   const result = []
-  const length = getRandomValueInRange(5,15)
-  const start = getRandomValueInRange(0, 9)
-  const step = getRandomValueInRange(1, 10)
+  const length = getRandomValueInRange(5,15,)
+  const start = getRandomValueInRange(0, 9,)
+  const step = getRandomValueInRange(1, 10,)
   for (let i=0;i<length;i++) {
-    result.push(start+i*step)
+    result.push(start+i*step,)
   }
 
   return result
