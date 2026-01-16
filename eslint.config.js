@@ -1,17 +1,7 @@
-import stylistic from '@stylistic/eslint-plugin'
+import js from "@eslint/js";
+import globals from "globals";
+import { defineConfig } from "eslint/config";
 
-export default [
-  {
-    plugins: {
-      '@stylistic': stylistic
-    },
-    rules: {
-      '@stylistic/quotes': ['error', 'single'],
-      '@stylistic/eol-last': ['error', 'always'],
-      '@stylistic/semi': ['error', 'never'],
-      '@stylistic/indent': ['error', 2],
-      '@stylistic/no-trailing-spaces': ['error', { 'skipBlankLines': false, 'ignoreComments': false }],
-      '@stylistic/comma-dangle': ['error', 'never']
-    }
-  }
-]
+export default defineConfig([
+  { files: ["**/*.{js,mjs,cjs}"], plugins: { js }, extends: ["js/recommended"], languageOptions: { globals: globals.node } },
+]);

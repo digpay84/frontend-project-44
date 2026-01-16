@@ -21,8 +21,10 @@
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
+    "@eslint/js": "^9.39.2",
     "@stylistic/eslint-plugin": "^5.6.1",
-    "eslint": "^9.39.2"
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0"
   },
   "bin": {
     "brain-games": "bin/brain-games.js",

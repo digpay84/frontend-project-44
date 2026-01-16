@@ -15,5 +15,3 @@ function createQuestion() {
     rightAnswer: isEven(question) ? 'yes' : 'no'
   }
 }
-
-
